@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./calculator.css">
+    <title>calculator</title>
+</head>
+<body>
+    
+
+
+<div class="container" >
+    <div class="calculator">
+        <form action="">
+            <div class="display">
+                <input id="output" type="text" name="display" placeholder="0" >
+            </div>
+            <div>
+                <input type="button" value="AC" class="operator" onclick="clearAll()" style="background: rgb(105, 2, 2);color: white;">
+                <input type="button" value="DE" class="operator" onclick="deleteItem()"style="background: rgb(105, 2, 2);color:white;">
+                <input type="button" value="%" class="operator" onclick="displayContent('%')">
+                <input type="button" value="/" class="operator" onclick="displayContent('/')">
+
+
+
+            </div>
+            <div>
+                <input type="button" value="7" onclick="displayContent('7')" >
+                <input type="button" value="8" onclick="displayContent('8')">
+                <input type="button" value="9" onclick="displayContent('9')" >
+                <input type="button" value="*" class="operator" onclick="displayContent('*')" >
+
+
+
+            </div>
+            <div>
+                <input type="button" value="4" onclick="displayContent('4')" >
+                <input type="button" value="5" onclick="displayContent('5')">
+                <input type="button" value="6" onclick="displayContent('6')">
+                <input type="button" value="-" class="operator" onclick="displayContent('-')">
+
+            </div>
+            <div>
+                <input type="button" value="1" onclick="displayContent('1')">
+                <input type="button" value="2" onclick="displayContent('2')">
+                <input type="button" value="3" onclick="displayContent('3')"v>
+                <input type="button" value="+" class="operator" onclick="displayContent('+')">
+
+
+
+            </div>
+            <div>
+                <input type="button" value="00" onclick="displayContent('00')" >
+                <input type="button" value="0" onclick="displayContent('0')">
+                <input style="width: 145px;" type="button" value="=" class="operator" onclick="showResult()">
+               
+
+
+
+            </div>
+        </form>
+    </div>
+</div>
+
+    
+</body>
+<script src="./script.js"></script>
+</html>
